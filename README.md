@@ -1,5 +1,9 @@
 # 视频截帧工具 Pro
 
+[![Download](https://img.shields.io/badge/下载-最新版本-brightgreen)](https://github.com/zcm08042/FrameGrabber-Pro/releases/latest)
+
+# 视频截帧工具 Pro
+
 一款现代化的视频逐帧浏览与截取工具，基于 Python + tkinter + OpenCV 构建。
 
 ## 功能
@@ -25,6 +29,10 @@
 | `B` | 添加 / 移除书签 |
 | `Ctrl + O` | 打开视频 |
 | `Ctrl + S` | 保存当前帧 |
+
+## 下载
+
+点击上方绿色按钮下载 FrameGrabber.exe，双击即可运行，无需安装 Python。
 
 ## 运行
 
