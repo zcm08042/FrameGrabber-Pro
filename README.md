@@ -1,66 +1,62 @@
-# 视频截帧工具 Pro
+# 帧捕获 v2.0
 
-[![Download](https://img.shields.io/badge/下载-最新版本-brightgreen)](https://github.com/zcm08042/FrameGrabber-Pro/releases/latest)
+[![Download](https://img.shields.io/badge/下载-v2.0-brightgreen)](https://github.com/zcm08042/FrameGrabber-Pro/releases/tag/v2.0)
 
-# 视频截帧工具 Pro
+<p align="center">
+  <img src="icon_preview.png" alt="帧捕获图标" width="120">
+</p>
 
-一款现代化的视频逐帧浏览与截取工具，基于 Python + tkinter + OpenCV 构建。
+**帧捕获** 是一款现代化的视频逐帧浏览与截取工具。轻量、快速、优雅，基于 Python + tkinter + OpenCV 构建。
 
-## 功能
+## ✨ 功能亮点
 
-- 🎬 **视频帧浏览** — 打开视频文件，逐帧浏览，支持拖放
-- 🎞️ **缩略图时间轴** — 底部缩略图条，点击快速跳转
-- 🔖 **帧书签** — 按 B 键标记关键帧，快速跳转
-- ✂️ **裁剪比例** — 自由 / 1:1 / 4:3 / 16:9 / 3:2 / 2:3 / 9:16，可视化裁剪框
-- 📦 **批量导出** — 每隔 N 帧自动保存，支持创建子文件夹
-- ▶️ **自动播放** — 空格键启动/停止逐帧播放
-- 💾 **保存当前帧** — 支持 PNG / JPEG / BMP
-- 🔔 **Toast 通知** — 操作反馈优雅不打扰
-- 🌙 **暗色主题** — GitHub Dark 风格，护眼现代
+- 🎬 **视频帧浏览** — 打开视频文件，逐帧浏览，支持**拖拽打开**
+- 🎞️ **进度条导航** — 拖动滑块快速定位，防抖优化不卡顿
+- ⏭️ **时间跳转** — 输入秒数或 `mm:ss` 格式直接跳转
+- 💾 **保存帧** — 支持 PNG / JPEG / BMP 格式，可设置默认保存目录
+- 🎨 **莫兰迪暗色主题** — 低饱和柔和配色，护眼高级
+- 📦 **单 exe 发布** — 无需 Python 环境，双击即用
+- 🚀 **极致性能** — 帧缓存 + 滑块防抖 + 窗口 resize 防抖
 
-## 快捷键
+## 🚀 快速开始
 
-| 按键 | 功能 |
-|------|------|
-| `←` `→` | 逐帧移动 |
-| `Shift + ← →` | 跳 1 秒 |
-| `Ctrl + ← →` | 跳 10 秒 |
-| `空格` | 播放 / 暂停 |
-| `B` | 添加 / 移除书签 |
-| `Ctrl + O` | 打开视频 |
-| `Ctrl + S` | 保存当前帧 |
+### 下载运行
 
-## 下载
-
-点击上方绿色按钮下载 FrameGrabber.exe，双击即可运行，无需安装 Python。
-
-## 运行
+从 [Releases](https://github.com/zcm08042/FrameGrabber-Pro/releases) 下载 `帧捕获.exe`，双击即可运行。
 
 ### 从源码运行
 
 ```bash
-pip install opencv-python pillow
+pip install opencv-python pillow pyinstaller
 python frame_grabber.py
 ```
 
 ### 打包为 exe
 
 ```bash
-pip install pyinstaller
-pyinstaller --onefile --windowed --noconsole --icon=icon.ico --name FrameGrabber frame_grabber.py
+pyinstaller --clean --onefile --noconsole --name=帧捕获 --icon=icon.ico --optimize=2 frame_grabber.py
 ```
 
-## 技术栈
+## ⌨️ 快捷键
 
-- **Python 3.13**
-- **tkinter** — GUI
-- **OpenCV** — 视频解码与帧处理
-- **Pillow** — 图像缩放与格式转换
+| 按键 | 功能 |
+|------|------|
+| `←` `→` | 逐帧移动 |
+| `Shift + ← →` | 跳 1 秒 |
+| `Ctrl + ← →` | 跳 10 秒 |
+| `Ctrl + O` | 打开视频 |
+| `Ctrl + S` | 保存当前帧 |
+| `Enter`（输入框） | 执行时间跳转 |
 
-## 截图
+## 📋 更新日志
 
-![图标](icon_preview.png)
+### v2.0 (2025-06)
+- 🔄 **全面性能重构** — 帧缓存、滑块防抖、resize 防抖，操作丝滑不卡
+- 🎨 **新配色** — 莫兰迪暗色主题，低饱和柔和高级
+- 🕒 **新增时间跳转** — 支持秒数 / mm:ss / h:mm:ss 输入
+- 🖼️ **自绘图标** — 胶片播放器风格图标
+- 📛 **中文名** — 更名为「帧捕获」
+- ⚡ **启动优化** — PyInstaller 字节码优化，启动更快
 
-## License
-
-MIT
+### v1.0
+- 初始版本：帧浏览、书签、批量导出、自动播放、裁剪比例、暗色主题
