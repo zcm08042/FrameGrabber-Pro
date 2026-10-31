@@ -50,7 +50,7 @@ pyinstaller --clean --onefile --noconsole --name=帧捕获 --icon=icon.ico --opt
 
 ## 📋 更新日志
 
-### v2.0 (2025-06)
+### v2.0 (2026-06)
 - 🔄 **全面性能重构** — 帧缓存、滑块防抖、resize 防抖，操作丝滑不卡
 - 🎨 **新配色** — 莫兰迪暗色主题，低饱和柔和高级
 - 🕒 **新增时间跳转** — 支持秒数 / mm:ss / h:mm:ss 输入
