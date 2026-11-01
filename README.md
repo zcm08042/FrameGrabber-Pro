@@ -34,8 +34,12 @@ python frame_grabber.py
 ### 打包为 exe
 
 ```bash
-pyinstaller --clean --onefile --noconsole --name=帧捕获 --icon=icon.ico --optimize=2 frame_grabber.py
+pyinstaller --clean --onefile --noconsole --name=FrameGrabber-Pro --icon=icon.ico --optimize=2 frame_grabber.py
 ```
+
+产物为 `dist/FrameGrabber-Pro.exe`。
+
+> ⚠️ 不要用中文做 `--name`。Windows 下中文参数可能因编码问题不生效，PyInstaller 会静默回落到默认名 `default.exe`（v2.0 曾因此发布了一个 235 MB 的 `default.exe`）。发版前请确认产物文件名，并手动改成带版本号的名称，例如 `FrameGrabber-Pro-2.0.exe`。
 
 ## ⌨️ 快捷键
 
@@ -60,3 +64,7 @@ pyinstaller --clean --onefile --noconsole --name=帧捕获 --icon=icon.ico --opt
 
 ### v1.0
 - 初始版本：帧浏览、书签、批量导出、自动播放、裁剪比例、暗色主题
+
+## 许可证
+
+MIT License，完整条款见 [LICENSE](LICENSE)。
