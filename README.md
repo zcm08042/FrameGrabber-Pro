@@ -22,7 +22,7 @@
 
 ### 下载运行
 
-从 [Releases](https://github.com/zcm08042/FrameGrabber-Pro/releases) 下载 `帧捕获.exe`，双击即可运行。
+从 [Releases](https://github.com/zcm08042/FrameGrabber-Pro/releases) 下载 `FrameGrabber-Pro-2.0.exe`（约 235 MB），双击即可运行。
 
 ### 从源码运行
 
